@@ -15,4 +15,5 @@ Then run the script.
 - copy the path (depending on Windows or Linux backslashes have to be converted to forward slash), we will use it in the next command:
 - ```docker run -d --name="dockursim" -e ROBOT_MODEL=UR10 -p 8080:8080 -p 29999:29999 -p 30001-30004:30001-30004 -v C:\Users\Fabian\URSIM_UR10_programs:/ursim/programs -v dockursim:/ursim --privileged --cpus=4 arranhs/dockursim:latest```
 - open any Internet Browser and type http://localhost:8080/ - here you can see the simulated robot it is accessible via the normal ports (e.g. RTDE on Port 30004)
+
 ![URSim.png](URSim.png)
