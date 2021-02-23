@@ -1,0 +1,4 @@
+ Program
+   Robot Program
+     MoveP
+       Waypoint_1

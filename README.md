@@ -15,5 +15,11 @@ Then run the script.
 - copy the path (depending on Windows or Linux backslashes have to be converted to forward slash), we will use it in the next command:
 - ```docker run -d --name="dockursim" -e ROBOT_MODEL=UR10 -p 8080:8080 -p 29999:29999 -p 30001-30004:30001-30004 -v C:\Users\Fabian\URSIM_UR10_programs:/ursim/programs -v dockursim:/ursim --privileged --cpus=4 arranhs/dockursim:latest```
 - open any Internet Browser and type http://localhost:8080/ - here you can see the simulated robot it is accessible via the normal ports (e.g. RTDE on Port 30004)
-
+- search for the "rtde-2.4.8" folder of your repository 
+- navigate to examples and copy the URP-Datei "rtde_control_loop" into the folder you recently created 
+(e.g. C:\Users\Fabian\URSIM_UR10_programs) 
+- now open Docker on your PC and start/restart "dockursim" and locate to this link on your Browser: http://localhost:8080/
+- first of all you have to power on the robot before create programs. Therefor you type "Power off" in the bottom left corner of the simulation and type "on" and "start"
+- load Program now and choose "rtde_control_loop.urp" and click "open"
+- you are now able to configure a Program for the roboter in the navigation point "Program"
 ![URSim.png](URSim.png)
