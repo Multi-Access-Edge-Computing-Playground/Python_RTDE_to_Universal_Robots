@@ -19,7 +19,7 @@ Then run the script.
 - navigate to examples and copy the URP-Datei "rtde_control_loop" into the folder you recently created 
 (e.g. C:\Users\Fabian\URSIM_UR10_programs) 
 - now open Docker on your PC and start/restart "dockursim" and locate to this link on your Browser: http://localhost:8080/
-- first of all you have to power on the robot before create programs. Therefor you type "Power off" in the bottom left corner of the simulation and type "on" and "start"
+- first of all you have to power on the robot before create programs. Therefore you type "Power off" in the bottom left corner of the simulation and type "on" and "start"
 - load Program now and choose "rtde_control_loop.urp" and click "open"
 - you are now able to configure a Program for the roboter in the navigation point "Program"
 ![URSim.png](URSim.png)
